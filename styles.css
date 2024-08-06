@@ -1,0 +1,172 @@
+/* Basic Reset */
+body {
+    margin: 0; /* إزالة الهوامش الافتراضية من الجسم */
+    padding: 0; /* إزالة الحشو الافتراضي من الجسم */
+    font-family: 'Roboto', sans-serif; /* تعيين الخط الافتراضي إلى روبوتو */
+}
+
+/* Hero Section */
+.l1 {
+    font-family: "Montserrat", sans-serif; /* تعيين خط مونتسيرات للعناوين الأساسية */
+}
+
+.l2 {
+    font-family: "Gupter", serif; /* تعيين خط غوبتر للنصوص الخاصة */
+    font-weight: 600; /* تعيين وزن الخط إلى 600 (نصف غامق) */
+}
+
+.hero {
+    background-color: #e0f7fa; /* لون خلفية القسم البطل */
+    color: #333; /* لون النصوص */
+    text-align: center; /* توسيط النصوص */
+    padding: 5rem 0; /* إضافة حشوة أعلى وأسفل */
+    position: relative; /* تعيين الوضع النسبي لتحديد موقع العناصر الداخلية */
+    overflow: hidden; /* إخفاء العناصر التي تتجاوز حدود القسم */
+    font-family: 'Pacifico', cursive; /* تعيين خط باسيفيكو */
+}
+
+.hero h1 {
+    font-size: 3rem; /* حجم الخط للعناوين */
+    margin-bottom: 1rem; /* هامش أسفل العنوان */
+    color: #00796b; /* لون العنوان */
+}
+
+.hero p {
+    font-size: 1.25rem; /* حجم الخط للنصوص */
+    margin-bottom: 2rem; /* هامش أسفل النصوص */
+    font-family: 'Roboto', sans-serif; /* تعيين خط روبوتو للنصوص */
+}
+
+.hero .btn {
+    background-color: #00796b; /* لون خلفية الزر */
+    color: #fff; /* لون النص في الزر */
+    border: none; /* إزالة الحدود من الزر */
+    border-radius: 50px; /* تعيين زاوية دائرية للزر */
+    padding: 10px 20px; /* إضافة حشوة داخلية للزر */
+    font-size: 1.25rem; /* حجم الخط في الزر */
+    transition: background-color 0.3s ease; /* تأثير انتقال اللون عند التمرير فوق الزر */
+}
+
+.hero .btn:hover {
+    background-color: #004d40; /* تغيير لون خلفية الزر عند التمرير فوقه */
+}
+
+/* Adding birthday sketches */
+.hero::before,
+.hero::after {
+    content: ''; /* تعيين محتوى فارغ لتطبيق الخلفية */
+    position: absolute; /* تعيين الوضع المطلق لتحديد موقع العناصر */
+    width: 100px; /* عرض العناصر */
+    height: 100px; /* ارتفاع العناصر */
+    background-size: cover; /* جعل الخلفية تغطي كامل العنصر */
+}
+
+.hero::before {
+    background-image: url('https://www.example.com/cake-blue-sketched.png'); /* تعيين صورة خلفية لقسم الكيك */
+    background-position: center; /* توسيط الصورة الخلفية */
+    top: 10%; /* تحديد موقع الصورة من الأعلى */
+    left: 10%; /* تحديد موقع الصورة من اليسار */
+}
+
+.hero::after {
+    background-image: url('https://www.example.com/balloons-blue-sketched.png'); /* تعيين صورة خلفية لقسم البالونات */
+    background-position: center; /* توسيط الصورة الخلفية */
+    bottom: 10%; /* تحديد موقع الصورة من الأسفل */
+    right: 10%; /* تحديد موقع الصورة من اليمين */
+}
+
+/* More About Section */
+#more {
+    background-color: #b3e5fc; /* لون خلفية القسم */
+    color: #333; /* لون النصوص */
+    padding: 5rem 0; /* إضافة حشوة أعلى وأسفل */
+    text-align: center; /* توسيط النصوص */
+    font-family: 'Roboto', sans-serif; /* تعيين خط روبوتو للنصوص */
+    position: relative; /* تعيين الوضع النسبي لتحديد موقع العناصر الداخلية */
+    overflow: hidden; /* إخفاء العناصر التي تتجاوز حدود القسم */
+}
+
+#more h2 {
+    font-size: 2rem; /* حجم الخط للعناوين الفرعية */
+    margin-bottom: 1rem; /* هامش أسفل العنوان */
+    color: #00796b; /* لون العنوان */
+    font-family: 'Pacifico', cursive; /* تعيين خط باسيفيكو للعناوين */
+}
+
+#more p {
+    font-size: 1.15rem; /* حجم الخط للنصوص */
+    margin-bottom: 2rem; /* هامش أسفل النصوص */
+}
+
+#more img {
+    border-radius: 10px; /* تعيين زوايا دائرية للصور */
+    max-width: 200px; /* تعيين أقصى عرض للصور */
+    height: auto; /* تعيين الارتفاع التلقائي للحفاظ على نسبة العرض إلى الارتفاع */
+}
+
+.gift-box {
+    cursor: pointer; /* تغيير المؤشر عند المرور فوق الصندوق */
+    transition: transform 0.3s ease; /* تأثير الانتقال عند التمرير فوق الصندوق */
+}
+
+.gift-box:hover {
+    transform: scale(1.1); /* تكبير الصندوق عند التمرير فوقه */
+}
+
+/* Footer */
+footer {
+    background-color: #e0f7fa; /* لون خلفية التذييل */
+    color: #333; /* لون النصوص */
+    padding: 1rem 0; /* إضافة حشوة أعلى وأسفل */
+    text-align: center; /* توسيط النصوص */
+    font-family: 'Roboto', sans-serif; /* تعيين خط روبوتو للنصوص */
+}
+
+footer p {
+    margin: 0; /* إزالة الهوامش من النصوص في التذييل */
+}
+
+/* Animation for Confetti */
+@keyframes confetti {
+    0% {
+        transform: translateY(-100%); /* بدء التحريك من الأعلى */
+        opacity: 0; /* شفافية صفرية في البداية */
+    }
+    50% {
+        transform: translateY(50%); /* التحريك إلى الأسفل منتصف الحركة */
+        opacity: 1; /* شفافية كاملة في المنتصف */
+    }
+    100% {
+        transform: translateY(100%); /* التحريك إلى الأسفل بالكامل */
+        opacity: 0; /* شفافية صفرية في النهاية */
+    }
+}
+
+.confetti {
+    position: absolute; /* تعيين الوضع المطلق لتحديد موقع العناصر */
+    width: 10px; /* عرض العناصر */
+    height: 10px; /* ارتفاع العناصر */
+    border-radius: 50%; /* جعل العناصر دائرية */
+    animation: confetti 3s linear; /* تطبيق أنيميشن التزيين */
+}
+
+/* Animation for Butterflies */
+@keyframes fly {
+    0% {
+        transform: translate(0, 0); /* بدء التحريك من الموقع الأصلي */
+    }
+    100% {
+        transform: translate(var(--end-x), var(--end-y)); /* التحريك إلى الموقع النهائي المحدد */
+    }
+}
+
+.butterfly {
+    position: absolute; /* تعيين الوضع المطلق لتحديد موقع العناصر */
+    width: 40px; /* زيادة حجم الفراشات */
+    height: 40px; /* زيادة حجم الفراشات */
+    background-image: url('butterfly.png'); /* تعيين صورة خلفية للفراشات */
+    background-size: contain; /* جعل الصورة تظهر بالكامل */
+    background-repeat: no-repeat; /* عدم تكرار الصورة */
+    background-position: center; /* توسيط الصورة */
+    animation: fly 4s linear; /* تطبيق أنيميشن الفراشات */
+}
